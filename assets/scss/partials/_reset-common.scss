@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Mulish:wght@300;400&display=swap');
+
+body {
+  font-family: $primary-font;
+  color: $primary-color;
+  margin: 0;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+img {
+  max-width: 100%;
+  display: block;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+}
+input {
+  outline: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $secondary-font;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+
+// Common
+a {
+  color: $primary-color;
+}
+.section-padding {
+  padding: 100px 0;
+}
+@media (max-width: 1199.98px) {
+  .section-padding {
+    padding: 70px 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+}
+
+.primary-font {
+  font-family: $primary-font;
+}
+.secondary-font {
+  font-family: $secondary-font;
+}
+
+// Utilities
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fz-15 {
+  font-size: 15px;
+}
+.fz-18 {
+  font-size: 18px;
+}
+.text-white *,
+.text-white {
+  color: #fff;
+}
+
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.button {
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 16px 27px;
+  padding-top: 18px;
+  @media (max-width: 991.98px) {
+    font-size: 14px;
+    padding: 13px 26px;
+    padding-top: 14px;
+  }
+  &.gradient-button {
+    background: linear-gradient(to bottom, #ff4495 0%, #ff6d6d 100%);
+    border-color: transparent;
+    letter-spacing: 1px;
+    &:hover {
+      // background: linear-gradient(to top, #ff4495 0%, #ff6d6d 100%);
+      background: transparent;
+      border-color: $pink;
+      // color: $pink;
+    }
+  }
+}
+.section-title h4 {
+  font-weight: 600;
+  color: $pink;
+  margin-bottom: 25px;
+}
+.section-title h2 {
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 55px;
+}
+
+@media (max-width: 1199.98px) {
+  .section-title h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 991.98px) {
+  .section-title h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+@media (max-width: 575.98px) {
+  .section-title h2 {
+    font-size: 30px;
+    line-height: 40px;
+    br {
+      display: none;
+    }
+  }
+}

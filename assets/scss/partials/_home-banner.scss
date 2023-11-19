@@ -1,0 +1,69 @@
+#home-banner {
+  @media (min-width: 1200px) {
+    padding-top: 30px;
+  }
+@media(max-width: 991.98px){
+    margin-top: -30px;
+}
+  background: linear-gradient(to right, #00095e 0%, #0c0c1f 100%);
+  .container {
+    @media (min-width: 1200px) {
+      min-height: 100vh;
+    }
+    @media (max-width: 1199.98px) {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    display: table;
+    position: relative;
+    > div {
+      display: table-cell;
+      vertical-align: middle;
+      position: relative;
+      z-index: 1;
+    }
+    > img {
+      position: absolute;
+      top: calc(50% + 30px);
+      right: 0;
+      max-width: 800px;
+      transform: translateY(-50%);
+      @media (max-width: 1199.98px) {
+        max-width: 650px;
+      }
+      @media (max-width: 991.98px) {
+        display: none;
+      }
+    }
+  }
+  h2 {
+    font-size: 64px;
+    line-height: 80px;
+    @media (max-width: 767.98px) {
+      font-size: 45px;
+      line-height: 60px;
+      br {
+        display: none;
+      }
+    }
+    @media (max-width: 383.98px) {
+font-size: 35px;
+line-height: 48px;
+    }
+  }
+  p {
+    margin-top: 12.5px;
+    margin-bottom: 30px;
+    @media (max-width: 767.98px) {
+      font-size: 16px;
+      line-height: 25px;
+      br {
+        display: none;
+      }
+    }
+  }
+  a.button {
+    padding-left: 32.5px;
+    padding-right: 32.5px;
+  }
+}
